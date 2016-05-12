@@ -8,6 +8,9 @@ namespace Weapon.Classes.Parent_Classes
 {
     class EdgedWeapons: Weapon
     {
-
+        public EdgedWeapons(string manufactured, string owner, int weight, string material)
+            : base(manufactured, owner, weight, material)
+        {
+        }
     }
 }

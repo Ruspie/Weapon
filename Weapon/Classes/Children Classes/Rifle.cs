@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Children_Classes
 {
-    class Rifle
+    class Rifle: Parent_Classes.Weapon
     {
+        public Rifle(string manufactured, string owner, int weight, string material)
+            : base(manufactured, owner, weight, material)
+        {
+        }
     }
 }
