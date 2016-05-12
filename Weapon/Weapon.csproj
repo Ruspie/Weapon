@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Children Classes\Bow.cs" />
+    <Compile Include="Classes\Children Classes\Dagger.cs" />
+    <Compile Include="Classes\Children Classes\Grenade.cs" />
+    <Compile Include="Classes\Children Classes\Pistol.cs" />
+    <Compile Include="Classes\Children Classes\Rifle.cs" />
+    <Compile Include="Classes\Children Classes\Sword.cs" />
+    <Compile Include="Classes\Parent Classes\EdgedWeapons.cs" />
+    <Compile Include="Classes\Parent Classes\Firearm.cs" />
+    <Compile Include="Classes\Parent Classes\ThrowingWeapons.cs" />
+    <Compile Include="Classes\Parent Classes\Weapon.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +86,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
