@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Parent_Classes
 {
-    class EdgedWeapons: Weapon
+    internal abstract class EdgedWeapons: Weapon
     {
-        public EdgedWeapons(string manufactured, string owner, int weight, string material)
-            : base(manufactured, owner, weight, material)
-        {
-        }
+        public int Length { get; set; }
+        public string Form { get; set; }
     }
 }

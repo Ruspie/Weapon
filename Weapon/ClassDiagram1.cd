@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Weapon.Classes.Parent_Classes.Weapon" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAACAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Parent Classes\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Parent_Classes.ThrowingWeapons" Collapsed="true">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Parent Classes\ThrowingWeapons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Parent_Classes.Firearm" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Classes\Parent Classes\Firearm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Parent_Classes.EdgedWeapons" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Parent Classes\EdgedWeapons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Children_Classes.Sword" Collapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Classes\Children Classes\Sword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Children_Classes.Rifle" Collapsed="true">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Children Classes\Rifle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Children_Classes.Pistol" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Classes\Children Classes\Pistol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Children_Classes.Grenade" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Children Classes\Grenade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Children_Classes.Dagger" Collapsed="true">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Children Classes\Dagger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon.Classes.Children_Classes.Bow" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Classes\Children Classes\Bow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

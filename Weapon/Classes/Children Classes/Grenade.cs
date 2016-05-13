@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Children_Classes
 {
-    class Grenade: Parent_Classes.Weapon
+    internal class Grenade : Parent_Classes.ThrowingWeapons
     {
-        public Grenade(string manufactured, string owner, int weight, string material)
-            : base(manufactured, owner, weight, material)
+        public string Type { get; set; }
+
+        public Grenade(string manufactured, string owner, int weight, string material, int range, string type)
         {
+            this.Manufacturer = manufactured;
+            this.Owner = owner;
+            this.Weight = weight;
+            this.Material = material;
+            this.Range = range;
+            this.Type = type;
         }
+
+        public Grenade() { }
     }
 }

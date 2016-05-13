@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Parent_Classes
 {
-    class Firearm: Weapon
+    internal abstract class Firearm: Weapon
     {
-        public Firearm(string manufactured, string owner, int weight, string material)
-            : base(manufactured, owner, weight, material)
-        {
-        }
+        public float Caliber { get; set; }
     }
 }

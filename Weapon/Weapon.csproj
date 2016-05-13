@@ -52,6 +52,7 @@
     <Compile Include="Classes\Children Classes\Pistol.cs" />
     <Compile Include="Classes\Children Classes\Rifle.cs" />
     <Compile Include="Classes\Children Classes\Sword.cs" />
+    <Compile Include="Classes\CreatorWeapons.cs" />
     <Compile Include="Classes\Parent Classes\EdgedWeapons.cs" />
     <Compile Include="Classes\Parent Classes\Firearm.cs" />
     <Compile Include="Classes\Parent Classes\ThrowingWeapons.cs" />
@@ -64,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,6 +77,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
