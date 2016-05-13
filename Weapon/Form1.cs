@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Weapon.Classes;
 using Weapon.Classes.Children_Classes;
+using Weapon.Classes.Parent_Classes;
 
 namespace Weapon
 {
@@ -37,11 +38,9 @@ namespace Weapon
             listWeapons[4].Name = "Pistol";
             listWeapons.Add(creatorWeapons.CreateWeapon(new Rifle(), "lol", "kek", 10, "tree", 10, "carabin"));
             listWeapons[5].Name = "Rifle";
-
-            Print();
         }
 
-        private void Print()
+       /* private void Print()
         {
             textBox1.Clear();
             foreach (var weapon in listWeapons)
@@ -52,7 +51,7 @@ namespace Weapon
                 textBox1.Text += weapon.Weight + "\t";
                 textBox1.Text += weapon.Material + "\r\n";
             }
-        }
+        }*/
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -61,7 +60,7 @@ namespace Weapon
             using (FileStream fs = new FileStream("log.bin", FileMode.OpenOrCreate))
             {
                 serialization.Serialize(fs, listWeapons);
-                textBox1.Text = "complete serialization";
+                MessageBox.Show("Serialization Complete");
             }
         }
 
@@ -73,8 +72,55 @@ namespace Weapon
             {
                 listWeapons = (List<Classes.Parent_Classes.Weapon>)serialization.Deserialize(fs);
             }
+        }
 
-            Print();
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void ClearComboBox(ComboBox comboBox)
+        {
+            while (comboBox.Items.Count > 0)
+            {
+                comboBox.Items.RemoveAt(0);
+            }
+        }
+
+        private void comboBoxTypeWeapon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBoxTypeWeapon.SelectedIndex)
+            {
+                case 0:
+                    ClearComboBox(comboBoxWeapon);
+                    comboBoxWeapon.Items.Add("Dagger");
+                    comboBoxWeapon.Items.Add("Sword");
+                    break;
+                case 1:
+                    ClearComboBox(comboBoxWeapon);
+                    comboBoxWeapon.Items.Add("Pistol");
+                    comboBoxWeapon.Items.Add("Rifle");
+                    break;
+                case 2:
+                    ClearComboBox(comboBoxWeapon);
+                    comboBoxWeapon.Items.Add("Bow");
+                    comboBoxWeapon.Items.Add("Grenade");
+                    break;
+                default:
+                    ClearComboBox(comboBoxWeapon);
+                    comboBoxWeapon.Items.Add("Dagger");
+                    comboBoxWeapon.Items.Add("Sword");
+                    break;
+            }
+            comboBoxWeapon.SelectedIndex = 0;
+        }
+
+        private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ClearComboBox(comboBoxSetProperties);
+            foreach (var key in new Bow().GetType().GetProperties())
+            {
+                comboBoxSetProperties.Items.Add(key);
+            }
         }
     }
 }
