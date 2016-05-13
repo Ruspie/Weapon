@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Children_Classes
 {
+    [Serializable]
     internal class Dagger: Parent_Classes.EdgedWeapons
     {
         public string Engraving { get; set; }

@@ -53,6 +53,7 @@
     <Compile Include="Classes\Children Classes\Rifle.cs" />
     <Compile Include="Classes\Children Classes\Sword.cs" />
     <Compile Include="Classes\CreatorWeapons.cs" />
+    <Compile Include="Classes\ListAddedWeapons.cs" />
     <Compile Include="Classes\Parent Classes\EdgedWeapons.cs" />
     <Compile Include="Classes\Parent Classes\Firearm.cs" />
     <Compile Include="Classes\Parent Classes\ThrowingWeapons.cs" />

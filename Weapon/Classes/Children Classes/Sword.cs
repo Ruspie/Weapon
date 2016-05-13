@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Children_Classes
 {
+    [Serializable]
     internal class Sword: Parent_Classes.EdgedWeapons
     {
         public string Type { get; set; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Weapon.Classes.Children_Classes
 {
+    [Serializable]
     internal class Rifle: Parent_Classes.Firearm
     {
         public string Engraving { get; set; }
